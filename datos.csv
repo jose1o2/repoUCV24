@@ -1,4 +1,5 @@
-nombre,direccion,numero,edad
-arturo,juan@hotmail.com,123,10
-juan,pepe@hotmail.com,123,50
-pepe,aro@gmail.com,456,90
+nombre,email,edad
+maria,maria@hotmail.com,23
+pedro,pedro@yahoo.com,34
+rosio,rosio@gmail.com,18
+juan,juan@ula.ve,15
