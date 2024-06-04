@@ -1,4 +1,4 @@
-name: imprimir un saludo
+name: imprimir datos y filtrar
 
 on:
   schedule:
@@ -6,7 +6,7 @@ on:
   workflow_dispatch:  # Allows manual triggering
 
 jobs:
-  check_earnings:
+  analizando_datos:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
@@ -17,7 +17,9 @@ jobs:
         with:
           python-version: '3.x'
 
-      - name: Run command in the vm
+      - name: imprimir tabla bruta y neta
         run: |
-          echo "Hola, esta es mi primer action"
-          ls -lhrt
+          echo "tabla desde la fuente"
+          cat datos.csv
+          echo "filtrando datos"
+          grep -iv hotmail datos.csv
